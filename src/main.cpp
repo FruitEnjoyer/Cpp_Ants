@@ -4,8 +4,6 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(400, 400), "SFML works!");
-
-    window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
     window.setFramerateLimit(60);
 
     while (window.isOpen())
