@@ -16,6 +16,7 @@ int main()
 
     std::cout << myfield.GetStatus(std::pair<int,int>(1,2)) << std::endl;
 
+
     /*
 
     while (window.isOpen())
