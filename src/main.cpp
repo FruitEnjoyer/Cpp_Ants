@@ -1,10 +1,14 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
 
+#include "ant.hpp"
+
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(400, 400), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(600, 600), "Ant colony simulation");
     window.setFramerateLimit(60);
+
+    ant::Ant(3.0, 4.6);
 
     while (window.isOpen())
     {
