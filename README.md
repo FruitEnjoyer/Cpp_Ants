@@ -20,6 +20,7 @@ git clone git@github.com:FruitEnjoyer/Cpp_Ants.git
 ### Структура проекта
 
 __Дерево проекта__
+```
 ├── build
 │   └── main
 ├── Makefile
@@ -28,7 +29,7 @@ __Дерево проекта__
     ├── ant.cpp
     ├── ant.hpp
     └── main.cpp
-
+```
 
 ### Сборка и запуск программы
 
