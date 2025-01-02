@@ -22,3 +22,23 @@ ant::Ant::Ant(double x, double y)
     this->x = x;
     this->y = y;
 }
+
+ant::Ant::~Ant() = default;
+
+double ant::Ant::GetX()
+{  return this->x;  }
+
+double ant::Ant::GetY()
+{  return this->y;  }
+
+ant::Ant& ant::Ant::SetX(double x)
+{
+    this->x = x;
+    return *this;
+}
+
+ant::Ant& ant::Ant::SetY(double y)
+{
+    this->y = y;
+    return *this;
+}

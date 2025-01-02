@@ -5,12 +5,12 @@
 Чтобы скачать проект, необходимо выполнить следубщие шаги:
 
 1. Перейти в предполагаемую директорию проекта:
-```
+```bash
 cd ~/path/to/project/directory
 ```
 
 2. Инициализировать git и клонировать проект из github:
-```
+```bash
 git init
 git clone git@github.com:FruitEnjoyer/Cpp_Ants.git
 ```
@@ -19,15 +19,32 @@ git clone git@github.com:FruitEnjoyer/Cpp_Ants.git
 
 ### Структура проекта
 
-<описание структуры в виде дерева>
+__Дерево проекта__
+├── build
+│   └── main
+├── Makefile
+├── README.md
+└── src
+    ├── ant.cpp
+    ├── ant.hpp
+    └── main.cpp
+
 
 ### Сборка и запуск программы
 
-__Внимание:__ для сборки проекта требуется наличие библиотеки SFML в стандартных путях системы. Чтобы установить библиотеку, выполните команды раздела "Installing SFML" в официальном туториале от SFML: [SFML and Linux](https://www.sfml-dev.org/tutorials/2.6/start-linux.php).
+__Внимание:__ для сборки проекта требуется наличие библиотеки SFML в стандартных путях системы. 
+
+Перед установкой SFML рекомендуется обновить установленные пакеты до актуальных версий:
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+Чтобы установить библиотеку, выполните команды раздела "Installing SFML" в официальном туториале от SFML: [SFML and Linux](https://www.sfml-dev.org/tutorials/2.6/start-linux.php).
 
 __Внимание:__ проект собирается под Linux Debian.
 Сборка проекта осуществляется с помощью Makefile. Чтобы собрать проект, запустите утилиту `make` в корне проекта:
-```
+```bash
 make
 ```
 
