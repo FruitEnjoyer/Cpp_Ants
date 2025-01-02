@@ -8,12 +8,20 @@
 
 namespace ant
 {
+    enum Status
+    {
+        EATING = 0,
+        SEARCHING
+    };
+
     class Ant
     {
     private:
-        double x, y; 
-        double vx, vy;
+        double x, y; /// ant position
+        double phi; /// ant body orientation in 2d
+        double v; /// ant speed
         int health; /// range: 0-100
+        enum Status status;
     public:
         Ant(double x, double y);
         ~Ant();
