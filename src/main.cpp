@@ -2,6 +2,7 @@
 #include <SFML/Network.hpp>
 
 #include <cmath>
+#include <iostream>
 
 #include "ant.hpp"
 
@@ -56,6 +57,6 @@ int main()
         window.draw(circle);
         window.display();
     }
-
+    std::cout << "\033[1;32m[Done]\n\033[0m" << std::endl;
     return 0;
 }
