@@ -21,9 +21,13 @@ ant::Ant::Ant(double x, double y)
 {
     this->x = x;
     this->y = y;
+    /// TODO: implement SFML object creation
 }
 
-ant::Ant::~Ant() = default;
+ant::Ant::~Ant()
+{
+    /// TODO: implement proper ant destructor
+}
 
 double ant::Ant::GetX()
 {  return this->x;  }

@@ -1,5 +1,11 @@
 /**
+ * @file ant.hpp
+ * @author ruslan (valeev.rl@mipt.ru)
  * @brief header file for ant.cpp
+ * @version 0.1
+ * @date 2025-01-02
+ * 
+ * @copyright Copyright (c) 2025
  * 
  */
 
@@ -21,7 +27,7 @@ namespace ant
         double phi; /// ant body orientation in 2d
         double v; /// ant speed
         int health; /// range: 0-100
-        enum Status status;
+        Status status;
     public:
         Ant(double x, double y);
         ~Ant();
@@ -29,6 +35,7 @@ namespace ant
         double GetY();
         Ant& SetX(double x);
         Ant& SetY(double y);
+        /// TODO: implement method for ant visualisation
     };
 } // namespace ant
 

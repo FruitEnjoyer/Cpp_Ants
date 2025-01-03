@@ -8,8 +8,9 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(600, 600), "Ant colony simulation");
-    window.setFramerateLimit(60);
+    sf::Event event;
     sf::ContextSettings settings;
+    window.setFramerateLimit(60);
     settings.antialiasingLevel = 8;
 
     ant::Ant(3.0, 4.6);
@@ -44,8 +45,8 @@ int main()
         }
 
         circle.move(vx, vy);
-        sf::Event event;
-        while (window.pollEvent(event))
+        
+        if (window.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
                 window.close();
