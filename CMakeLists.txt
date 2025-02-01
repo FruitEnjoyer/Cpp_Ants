@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
-project(ants VERSION 0.1)
+project(ant_colony VERSION 0.1)
 set(CMAKE_C_STANDARD 11)
 
-set(SOURCES src/main.cpp src/ant.c src/anthill.c src/pheromone.cpp)
+set(SOURCES src/main.c src/ant.c src/anthill.c src/pheromone.c)
 
-add_executable(main ${SOURCES})
+add_executable(ants ${SOURCES})
 
-target_link_libraries(main libSDL2-2.0.so)
+target_link_libraries(ants libSDL2-2.0.so)
