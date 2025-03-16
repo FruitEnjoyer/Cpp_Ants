@@ -5,6 +5,9 @@
 #include <iostream>
 
 #include "ant.hpp"
+#include "food.cpp"
+
+Food_t* p_food;
 
 int main()
 {
@@ -20,6 +23,8 @@ int main()
     circle.setPosition(0, 0);
     
     float vx = 4.f, vy = std::sqrt(8.f);
+
+    p_food = Food_initialize(0, 0, 100, 100, 10, 10);
 
     while (window.isOpen())
     {
@@ -56,7 +61,14 @@ int main()
         window.clear(sf::Color::White);
         window.draw(circle);
         window.display();
+
+        //food test
+        Food_set_by_position(p_food, 99, 99, 5);
+        Food_print(p_food);
+        
     }
+    Food_terminate(p_food);
+
     std::cout << "\033[1;32m[Done]\n\033[0m" << std::endl;
     return 0;
 }
